@@ -23,12 +23,12 @@ jobs:
     strategy: 
       matrix:
         include:
-          - arch: GENERIC_CPU2
-            image-name: bzImage-old
+          - arch: MZEN3
+            image-name: bzImage-zen3
           - arch: GENERIC_CPU3
             image-name: bzImage
-          - arch: MSKYLAKE
-            image-name: bzImage-skylake
+          - arch: MALDERLAKE
+            image-name: bzImage-alderlake
 
     steps:
     - name: Trust this directory
